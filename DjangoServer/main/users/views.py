@@ -7,7 +7,7 @@ from rest_framework.parsers import JSONParser
 
 @api_view(['POST'])
 @parser_classes([JSONParser])
-def serch(request):
+def users(request):
     if request.method == 'POST':
         user_info = request.data
         name = user_info['Name']

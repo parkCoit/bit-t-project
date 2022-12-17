@@ -18,6 +18,11 @@ from django.urls import path, include
 from admin.views import hello
 
 urlpatterns = [
-    path('', hello),
-    path("main/users", include('main.users.urls')),
+    path("", hello),
+    path("kdaNlp", include('kda_nlp.kda_list.urls')),
+    path("", include('kill_analysis.ash_output.urls')),
+    path("main", include('main.users.urls')),
+    path("", include('playlist.game_list.urls')),
+    path("", include('ward_places.min_output.urls')),
+    path("", include('ward_places.minimap_ward.urls')),
 ]

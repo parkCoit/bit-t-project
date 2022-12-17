@@ -1,10 +1,10 @@
-import {TestComponent} from "../"
+import {KdaList} from "../"
 
 const KdaNlp = () => {
 
     return(
         <>
-        <TestComponent/>
+        <KdaList/>
         </>
     )
 }

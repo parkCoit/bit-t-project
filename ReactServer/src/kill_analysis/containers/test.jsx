@@ -1,9 +1,9 @@
-import { TestComponent } from "../"
+import { Test } from "../"
 
 const KillAnalysis = () => {
     return (
         <>
-        <TestComponent/>
+        <Test/>
         </>
     )
 }

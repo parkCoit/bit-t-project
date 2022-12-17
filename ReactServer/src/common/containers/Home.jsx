@@ -2,9 +2,9 @@
 import { Route, Routes } from "react-router-dom";
 
 // 내부 모듈
-import { Access } from "../../Home";
+import { Access } from "../../main";
 import { Navb, Footer } from "..";
-import { Records } from "../../main";
+import { Records } from "../../playlist";
 
 const Home = () => {
   return (

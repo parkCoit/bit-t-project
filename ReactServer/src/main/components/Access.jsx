@@ -21,15 +21,14 @@ const Access = () => {
 
   const onClick = e =>{
     e.preventDefault()
-    navigate("/records");
     const nameRequests = {Name}
     alert(`사용자 이름: ${JSON.stringify(nameRequests)}`)
     postMainApi(nameRequests)
     .then((res)=>{
+        navigate("/records");
         console.log(`Response is ${res.config.data}`)
         localStorage.setItem('token', JSON.stringify(res.config.data))
-        alert(`닉네임 : ${JSON.stringify(res.data.name)}`)
-        
+        alert(`닉네임 : ${JSON.stringify(res.data.name)}`)    
     })
     .catch((err)=>{
         console.log(err)
