@@ -1,5 +1,5 @@
 //components
-export {default as TestComponent} from "./components/test"
+export {default as Test} from "./components/test"
 
 //containers
 export {default as KillAnalysis} from "./containers/test"

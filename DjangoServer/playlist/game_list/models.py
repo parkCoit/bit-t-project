@@ -1,7 +1,7 @@
 from django.db import models
 
 from kda_nlp.kda_list.models import KdaList
-from kill_analysis.ashoutput.models import AshOutput
+from kill_analysis.ash_output.models import AshOutput
 from main.users.models import Users
 from ward_places.min_output.models import MinOutput
 
