@@ -5,14 +5,14 @@ class MinimapWard(models.Model):
     use_in_migration = True
 
     time = models.AutoField(primary_key=True)
-    team = models.IntegerField()
-    ward_place = models.IntegerField()
-    x = models.IntegerField()
-    y = models.IntegerField()
-    champion_count = models.IntegerField()
-    ward_type = models.IntegerField()
-    control_count = models.IntegerField()
-    ward_duration = models.IntegerField() # 와드 지속 시간
+    team = models.IntegerField(max_length=10)
+    ward_place = models.IntegerField(max_length=10)
+    x = models.IntegerField(max_length=10)
+    y = models.IntegerField(max_length=10)
+    champion_count = models.IntegerField(max_length=10)
+    ward_type = models.IntegerField(max_length=10)
+    control_count = models.IntegerField(max_length=10)
+    ward_duration = models.IntegerField(max_length=10) # 와드 지속 시간
 
     class Meta:
         db_table = "minimap_ward"
