@@ -13,6 +13,9 @@ pandas
 mysql-connector
 mysqlclient
 lxml
+JPype1-1.4.0-cp39-cp39-win_amd64.whl
+pip install konlpy
+python -m pip install tweepy==3.10.0
 click==7.1.2
 folium==0.12.1
 html5lib

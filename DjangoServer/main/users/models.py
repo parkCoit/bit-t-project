@@ -2,7 +2,7 @@ from django.db import models
 
 class Users(models.Model):
     use_in_migration = True
-    nickname = models.AutoField(primary_key=True)
+    nickname = models.CharField(max_length=40,primary_key=True, unique=True)
     puuid = models.UUIDField()
 
     class Meta:

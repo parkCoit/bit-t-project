@@ -42,12 +42,12 @@ INSTALLED_APPS = [
 ]
 
 
-CORS_ORIGIN_WHITELIST = ['http://192.   168.0.19:9090 ',
-                         'http://localhost:9090'] #api 설정?
+CORS_ORIGIN_WHITELIST = ['http://192.168.0.19:9090 ',
+                         'http://localhost:9090']
 CORS_ALLOW_CREDENTIALS = True
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware", # 미들웨어 제어역할?
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
